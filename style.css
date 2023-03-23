@@ -35,16 +35,19 @@
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    padding: 2rem;
-    
+    min-height: 100vh;  
+    box-sizing: border-box;
+
+    margin: 0;
 
     background-color: var(--crl-d-cyan);
 }
 
 
 main {
-    max-width: 40rem;
+    max-width: 20rem;
     min-height: 20rem;
 
     flex: 1;
@@ -52,14 +55,14 @@ main {
     border-radius: 1rem;
 
     background-color: white;
-    box-shadow: 0 0.2rem 0.3rem hsla(0, 0%, 0%, 0.4);
+    box-shadow: 0 0.2rem 0.3rem hsla(0, 0%, 0%, 0.3);
 
     text-align: center;
 }
 
 
 .banner {
-    height: 30%;
+    min-height: 7.5rem;
 
     border-radius: 1rem 1rem 0 0;
 
@@ -88,7 +91,7 @@ article {
 
 
 header {
-    border-bottom: 1px solid var(--clr-d-gray);
+    border-bottom: 1px solid hsla(0, 0%, 50%, 0.3);
     width: 100%;
 }
 
@@ -117,9 +120,13 @@ header > p {
     width: 100%;
 }
 
-.stats > * {
+.stats > div {
     flex: 1;
 }
+
+.stats > div > * {
+    margin-bottom: 0.1rem;
+} 
 
 
 
