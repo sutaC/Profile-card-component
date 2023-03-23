@@ -43,6 +43,11 @@ body {
     margin: 0;
 
     background-color: var(--crl-d-cyan);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: calc(-40rem + 20vw) -90vh, 50vw 40vh;
+
+
 }
 
 
